@@ -72,3 +72,9 @@ exports.censorPalindrome = (sentence) => {
 };
 
 // Solution for task 3 D
+/* The current way the "censored words list" is provided to the application is via a helper function which converts it from an array into object.
+Alternatives are:
+- eliminate the helper function and refactor the application so that it only accepts objects (redundant solution).
+- refactor the helper function so that it accepts different types of input (e.g. strings or arrays) and returns and an object.
+- encapsulate the function in a class, declaring the 'censored words list' as a variable. this then means that the censored word list can be used in the function without passing it in as an argument.
+*/  
