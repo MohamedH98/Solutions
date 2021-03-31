@@ -20,6 +20,7 @@ exports.isPalindrome = (string) => {
 
 // Solution for task 3 A
 exports.arrToObj = (arr) => {
+  if (!Array.isArray(arr)) throw new Error("Must enter object");
   const censoredObj = {};
   arr.forEach((word) => {
     censoredObj[word] = 0;
